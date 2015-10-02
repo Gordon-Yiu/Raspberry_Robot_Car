@@ -23,3 +23,9 @@ directory structure so far as of Oct 1, 2015.
     └── pid_44.py                     #subclass pid.py and check parameters, I want to improve with a 
                                       # running difference for better timing and resolution
 
+HARDWARE CONFIGURATION
+1. Raspberry pi
+2. PWM module with PC9685 PWM module on I2C 0x40
+3. motor driver module L298N
+4. Optical interrupt on GPIO pin 38 and 40
+test for commit
