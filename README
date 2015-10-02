@@ -1,0 +1,24 @@
+  Mini_car project by gordon.yiu@gmail.com
+
+I just want to put my effort building a very simple car and share.
+This car is purchased from Raspberry with RPI 2 model B, two DC motors, two encoders, one PWM with I2C bus, and a L298N.
+I get several module from Adafruit for PWM control and I2C. And one pid  control algorithm from cnr437@gmail.com, decorate it and implement my own
+
+
+https://github.com/Gordon-Yiu/Raspberry_Robot_Car.git
+
+
+directory structure so far as of Oct 1, 2015.
+
+.
+├── README    #This file
+├── docs      #so far none.
+└── mini_car
+    ├── Adafruit_I2C.py               #from Adafruit for I2C
+    ├── Adafruit_PWM_Servo_Driver.py  #from Adafruit for PWM module control
+    ├── car_drive.py                  #class for control the car for move, turn with specific PWM
+    ├── log_car.py                    #functions to log timeing and mission factor
+    ├── move_main.py                  
+    ├── pid.py                        #pid algorothm for pid from cnr437@gmail.com
+    └── pid_44.py                     #subclass pid.py and check parameters, I want to improve with a 
+                                      # running difference for better timing and resolution
