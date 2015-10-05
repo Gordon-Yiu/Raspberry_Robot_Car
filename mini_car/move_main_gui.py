@@ -10,6 +10,7 @@ import time
 import car_drive
 from pid_44 import PID_44, PID_1
 import log_car
+import Tkinter
 
 #++HARDWARE SETTING+++++++++++++++++++++++++++++++++++
 RIGHT_WHEEL_ENCODER     = 38
